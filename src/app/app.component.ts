@@ -63,7 +63,7 @@ export class AppComponent implements OnInit {
     this.emailId = 'moulikiran.somesetty@gmail.com';
     this.MobileNumber = '+(91)-7799827883';
 
-    this.pollingData = Observable.interval(2000)
+    this.pollingData = interval(3000).pipe()
       .switchMap(() => this.http.get('http://myprofilespring.herokuapp.com/greeting')).map((data) => data.json())
       .subscribe((data) => {
         if(data != null){
