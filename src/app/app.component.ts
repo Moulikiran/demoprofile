@@ -43,20 +43,7 @@ export class AppComponent implements OnInit {
       { name: 'LinkedIn', imgSrc: 'assets/linkedin.png', url: 'http://linkedin.com' },
       { name: 'twitter', imgSrc: 'assets/twiiter.png', url: 'http://twitter.com' }];
 
-      this.pollingData = Observable.interval(2000)
-      .switchMap(() => http.get('http://myprofilespring.herokuapp.com/greeting')).map((data) => data.json())
-      .subscribe((data) => {
-        if(data != null){
-        if(data.content === this.oldSelected) {
-          console.log(data.content , this.oldSelected);
-        }else{
-          this.oldSelected = data.content;
-          this.router.navigate(['/'+data.content]);
-        }
-      }
-     });
-
-     timer(0, 500)
+    timer(0, 500)
     .subscribe(() => {
       http.get('http://myprofilespring.herokuapp.com/greeting').map(data => data.json()).subscribe(data => {
         if(data != null){
