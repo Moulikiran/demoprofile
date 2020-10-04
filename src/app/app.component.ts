@@ -4,7 +4,7 @@ import {Http, RequestOptions} from '@angular/http';
 import 'rxjs/Rx';
 import {Observable} from 'rxjs/Rx';
 import {Router} from "@angular/router";
-import {interval} from 'rxjs/observable/interval'
+import { interval } from 'rxjs';
 
 
 @Component({
@@ -24,6 +24,7 @@ export class AppComponent implements OnInit {
   headers: Headers;
   oldSelected : string;
   myQuote : string;
+  http: Http;
   
   headerDict = {
     'Content-Type': 'application/json',
@@ -41,18 +42,7 @@ export class AppComponent implements OnInit {
       { name: 'LinkedIn', imgSrc: 'assets/linkedin.png', url: 'http://linkedin.com' },
       { name: 'twitter', imgSrc: 'assets/twiiter.png', url: 'http://twitter.com' }];
 
-      this.pollingData = interval(2000)
-      .switchMap(() => http.get('http://myprofilespring.herokuapp.com/greeting')).map((data) => data.json())
-      .subscribe((data) => {
-        if(data != null){
-        if(data.content === this.oldSelected) {
-          console.log(data.content , this.oldSelected);
-        }else{
-          this.oldSelected = data.content;
-          this.router.navigate(['/'+data.content]);
-        }
-      }
-     });
+      this.http = http;
   }
 
   ngOnDestroy() {
@@ -72,6 +62,19 @@ export class AppComponent implements OnInit {
                           this is me aboutthis is me about`;
     this.emailId = 'moulikiran.somesetty@gmail.com';
     this.MobileNumber = '+(91)-7799827883';
+
+    this.pollingData = interval(2000)
+      .switchMap(() => this.http.get('http://myprofilespring.herokuapp.com/greeting')).map((data) => data.json())
+      .subscribe((data) => {
+        if(data != null){
+        if(data.content === this.oldSelected) {
+          console.log(data.content , this.oldSelected);
+        }else{
+          this.oldSelected = data.content;
+          this.router.navigate(['/'+data.content]);
+        }
+      }
+     });
   }
   public routeToPage(toPage: string){
     this.router.navigate(['/'+toPage]);
