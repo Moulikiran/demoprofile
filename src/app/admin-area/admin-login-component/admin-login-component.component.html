@@ -1,0 +1,17 @@
+<div class="container">
+
+    <form (click) = "loginAdmin(loginForm.value)" [formGroup] = "loginForm">
+        <input type="text" name="username" formControlName = "username" >
+        
+        <!-- For error handling -->
+        <!-- <div *ngIf="form.get('username').hasError('pattern')">Error</div> -->
+    
+        <input type="text" name="password" formControlName = "password">
+        <button type="submit"> Login </button>
+    </form> 
+    <h1>Our MongoDB is Working!</h1>
+
+    <ul>
+      <li *ngFor="let user of users">{{ user.name }}</li>
+    </ul>
+</div>

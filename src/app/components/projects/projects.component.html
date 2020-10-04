@@ -1,0 +1,33 @@
+<div class="col-sm-12" id="projects" style="text-align: right">
+  <img src="assets/projects.png" id="projectsPhoto">
+  <label id="projectsLabel"> Professional Summary </label>
+</div>
+<hr id="horizontalBar">
+
+<div *ngFor="let project of projects" [ngStyle]="{'margin-top': project.paddingRequired ? '325px' : '0px'}" >
+  <div class="col-sm-12">
+      <label id="companyName" style="float: left; font-family: cursive; font-size: 30px;">{{project.companyName}}</label>
+      <label id="companyYear" style="float: right; font-family: Arial, Helvetica, sans-serif ; font-size: 25px;">{{project.year}}</label>
+      <hr style="width: inherit; float: right;" id="horizontalLine">
+  </div>
+  <div style="float: left;">
+    <table>
+      <tr>
+        <td>Project: &nbsp;</td>
+        <td>{{project.product}}</td>
+      </tr>
+      <tr>
+        <td style="width: 200px;">Project Description: </td>
+        <td>{{project.productDesc}}</td>
+      </tr>
+      <tr>
+        <td>Role:</td>
+        <td>{{project.role}}</td>
+      </tr>
+      <tr>
+        <td style="width: 200px;">Responsiblites:</td>
+        <td>{{project.delivered}}</td>
+      </tr>
+    </table>
+</div>
+</div>

@@ -1,0 +1,203 @@
+.AboutMe {
+    width: 100%;
+    height: 800px;
+    border : 2px solid white;
+    text-align: center;
+    background-image: url('assets/homeBackground.jpg');
+    background-repeat:no-repeat;
+    background-size: 100% 40%;
+    display: inline-block;
+  }
+  
+  .row{
+    padding-top: 50px;
+  }
+  
+  #myname, #expertise{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 3em;
+    color: white;
+  }
+  
+  #myQuote{
+    font-style: italic;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 2em;
+    padding-top: 25px;
+    color: white;
+  }
+  
+  #mobileNumber, #emailId{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: white;
+  }
+  
+  #aboutMe{
+    padding-left: 4%;
+    width: 40%;
+    display: inline-block;
+    color: white;
+    text-align: left;
+  }
+  
+  .sections{
+    border: 1px solid;
+    background: white;
+    margin-top: 3.6em
+  }
+  
+  .socialNetworking{
+    padding: 0.5em
+  }
+  
+  #contentAboutMe{
+    width: 100%;
+    display: inline-block;
+    color: white;
+  }
+  
+  #contactMe{
+    position: relative;  
+    padding-right: 4%;
+    text-align: right;
+    color: white;
+  }
+  
+  #profileSize{
+    width: 200px;
+  height: 200px;
+  transform: rotate(-45deg) translateY(-74px);
+  }
+  
+  .profilePhoto, .profilePhoto div {
+    margin: 0 auto;
+    transform-origin: 50% 50%;
+    overflow: hidden;
+    width: 140px;
+    height: 140px;
+  }
+  .profilePhoto {
+    transform: rotate(45deg) translateY(10px);
+  }
+  .profilePhoto .profileAdjustment {
+    width: 255px;
+    height: 255px;
+    transform: rotate(-45deg) translateY(-74px);
+    padding-top: 25px;
+    padding-right: 25px;
+  }
+  .profilePhoto .profileAdjustment img {
+    width: 100%;
+    height: auto;
+  }
+  
+  #profilePhoto{
+    padding-left: 10%
+  }
+  
+  
+  .leftdivsion {
+    border-bottom: 90px solid lightgray;
+      border-right: 90px solid transparent;
+      margin-top: -30px;
+    float: left;
+  }
+  
+  .leftSections{
+    float: left;
+    position: relative;
+    margin-top: -4.5em;
+    margin-left: -4em;
+  }
+  
+  .rightDivison{
+    border-bottom: 90px solid lightgray;
+      border-left: 90px solid transparent;
+    margin-top: -30px;
+    float: right;
+    position: relative;
+  }
+  
+  .rightSections{
+    float: right;
+    position: relative;
+    margin-top: -4.5em;
+    margin-right: -0.6em
+    
+  }
+  
+  .sections{
+    
+  }
+  
+  .iconReplacer{
+    height: 2.5em;
+    width: 2.5em;
+  }
+  
+  .button {
+    background-color: #4CAF50;
+    border-radius: 25px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    width: 8.5em;
+    
+  }
+  
+  a {
+    color: white;
+    font-family: '';
+    text-decoration: none;
+  }
+  
+  
+  #aboutmeContent:hover{
+    background-color: red;
+  }
+  
+  #aboutmeContent{
+    background-color: #824CA7
+  }
+  
+  
+  #activites:hover {
+    background: red;
+  }
+  
+  #activites{
+    background-color: #C05640
+  }
+  
+  
+  #education:hover {
+    background: red;
+  }
+  
+  #education{
+    background-color: #107050
+  }
+  
+  
+  #skills:hover {
+    background: red;
+  }
+  
+  #skills{
+    background-color: #D57030
+  }
+  
+  
+  #projects:hover {
+    background: red;
+  }
+  
+  #projects{
+    background-color: #F1445B
+  }
+  
+  
+  

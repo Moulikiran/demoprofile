@@ -1,0 +1,55 @@
+#projects{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+    font-size: 2.5em;
+    color: #824CA7;
+    text-align: center;
+}
+
+#horizontalBar {
+    margin-top: 0em;
+    height:3px;
+    border-width:0;
+    color:#824CA7;
+    background-color:#824CA7
+}
+
+#horizontalLine {
+    margin-top: 0em;
+    color:dimgray;
+    background-color:dimgray;
+}
+
+#projectsPhoto{
+    height: 1.3em;
+    width: 1.3em;
+}
+
+#projectsContent{
+    align-content: flex-start;
+}
+
+#projectsLabel{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.7em;
+}
+
+#projectsDetailLabel{
+    align-content: flex-start;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
