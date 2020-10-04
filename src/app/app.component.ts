@@ -2,8 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 import {Http, RequestOptions} from '@angular/http';
 import 'rxjs/Rx';
-import {Observable} from 'rxjs/Observable';
-import {Router} from "@angular/router"
+import {Observable} from 'rxjs/Rx';
+import {Router} from "@angular/router";
+import {interval} from 'rxjs/observable/interval'
 
 
 @Component({
@@ -40,7 +41,7 @@ export class AppComponent implements OnInit {
       { name: 'LinkedIn', imgSrc: 'assets/linkedin.png', url: 'http://linkedin.com' },
       { name: 'twitter', imgSrc: 'assets/twiiter.png', url: 'http://twitter.com' }];
 
-      this.pollingData = Observable.interval(2000)
+      this.pollingData = interval(2000)
       .switchMap(() => http.get('http://myprofilespring.herokuapp.com/greeting')).map((data) => data.json())
       .subscribe((data) => {
         if(data != null){
