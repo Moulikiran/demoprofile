@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 import {Http, RequestOptions} from '@angular/http';
 import 'rxjs/Rx';
-import {Observable} from 'rxjs/Rx';
+import {Observable} from 'rxjs/Observable';
 import {Router} from "@angular/router"
 
 
