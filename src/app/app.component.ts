@@ -52,6 +52,7 @@ export class AppComponent implements OnInit {
           }else{
             this.oldSelected = data.content;
             this.router.navigate(['/'+data.content]);
+            console.log("Changing route to"+ data.content);
           }
         }
       })
