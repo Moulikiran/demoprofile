@@ -6,8 +6,7 @@ import {Observable} from 'rxjs/Rx';
 import {Router} from "@angular/router";
 import { interval } from 'rxjs';
 import { timer } from 'rxjs'
-import { map } from 'rxjs/operators';
-
+import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'app-root',
@@ -43,7 +42,7 @@ export class AppComponent implements OnInit {
       { name: 'LinkedIn', imgSrc: 'assets/linkedin.png', url: 'http://linkedin.com' },
       { name: 'twitter', imgSrc: 'assets/twiiter.png', url: 'http://twitter.com' }];
 
-    timer(0, 500)
+    timer(0, 3000)
     .subscribe(() => {
       http.get('http://myprofilespring.herokuapp.com/greeting').map(data => data.json()).subscribe(data => {
         if(data != null){
