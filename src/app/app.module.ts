@@ -18,7 +18,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgImageSliderModule } from 'ng-image-slider';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -41,6 +41,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
     HttpModule,
     BrowserAnimationsModule,
     NgImageSliderModule,
+    HttpClientModule,
     NgCircleProgressModule.forRoot({})
   ],
   providers: [DataService],

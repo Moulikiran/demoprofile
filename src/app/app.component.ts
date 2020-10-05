@@ -7,6 +7,7 @@ import {Router} from "@angular/router";
 import { interval } from 'rxjs';
 import { timer } from 'rxjs'
 import 'rxjs/add/operator/map';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -25,7 +26,7 @@ export class AppComponent implements OnInit {
   headers: Headers;
   oldSelected : string;
   myQuote : string;
-  
+  data: Greeting;
   headerDict = {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
@@ -36,7 +37,7 @@ export class AppComponent implements OnInit {
     headers: new Headers(this.headerDict), 
   };
   
-  constructor(http:Http, private router : Router) {
+  constructor( private http:HttpClient, private router : Router) {
     this.networks = [
       { name: 'Facebook', imgSrc: 'assets/facebook.png', url: 'http://facebook.com' },
       { name: 'LinkedIn', imgSrc: 'assets/linkedin.png', url: 'http://linkedin.com' },
@@ -44,7 +45,7 @@ export class AppComponent implements OnInit {
 
     timer(0, 3000)
     .subscribe(() => {
-      http.get('http://myprofilespring.herokuapp.com/greeting').map(data => data.json()).subscribe(data => {
+      http.get<Greeting>('http://myprofilespring.herokuapp.com/greeting').subscribe(data => {
         if(data != null){
           if(data.content === this.oldSelected) {
             console.log(data.content , this.oldSelected);
@@ -78,4 +79,8 @@ export class AppComponent implements OnInit {
   public routeToPage(toPage: string){
     this.router.navigate(['/'+toPage]);
   }
+}
+
+interface Greeting{
+  content: string;
 }
