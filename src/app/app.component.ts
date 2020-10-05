@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
 
     timer(0, 3000)
     .subscribe(() => {
-      http.get<Greeting>('http://myprofilespring.herokuapp.com/greeting').subscribe(data => {
+      http.get<Greeting>('https://myprofilespring.herokuapp.com/greeting').subscribe(data => {
         if(data != null){
           if(data.content === this.oldSelected) {
             console.log(data.content , this.oldSelected);
