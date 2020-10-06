@@ -64,7 +64,7 @@
   }
   
   #profileSize{
-    width: 200px;
+  width: 200px;
   height: 200px;
   transform: rotate(-45deg) translateY(-74px);
   }
@@ -154,47 +154,27 @@
     text-decoration: none;
   }
   
-  
-  #aboutmeContent:hover{
-    background-color: red;
-  }
-  
   #aboutmeContent{
     background-color: #824CA7
   }
   
   
-  #activites:hover {
-    background: red;
+  #activites:hover, #education:hover, #skills:hover, #projects:hover, #aboutmeContent:hover {
+    background: lightslategrey;
   }
   
   #activites{
     background-color: #C05640
   }
   
-  
-  #education:hover {
-    background: red;
-  }
-  
   #education{
     background-color: #107050
-  }
-  
-  
-  #skills:hover {
-    background: red;
   }
   
   #skills{
     background-color: #D57030
   }
-  
-  
-  #projects:hover {
-    background: red;
-  }
-  
+
   #projects{
     background-color: #F1445B
   }
