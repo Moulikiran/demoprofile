@@ -39,9 +39,9 @@ export class AppComponent implements OnInit {
   
   constructor( private http:HttpClient, private router : Router) {
     this.networks = [
-      { name: 'Facebook', imgSrc: 'assets/facebook.png', url: 'http://facebook.com' },
-      { name: 'LinkedIn', imgSrc: 'assets/linkedin.png', url: 'http://linkedin.com' },
-      { name: 'twitter', imgSrc: 'assets/twiiter.png', url: 'http://twitter.com' }];
+      { name: 'Facebook', imgSrc: 'assets/facebook.png', url: 'https://www.facebook.com/mouli545/' },
+      { name: 'LinkedIn', imgSrc: 'assets/linkedin.png', url: 'https://www.linkedin.com/in/mouli45/' },
+      { name: 'twitter', imgSrc: 'assets/twiiter.png', url: 'https://twitter.com/MouliKiran45' }];
 
     timer(0, 3000)
     .subscribe(() => {
