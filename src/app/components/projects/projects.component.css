@@ -53,3 +53,9 @@ table {
   tr:nth-child(even) {
     background-color: #dddddd;
   }
+
+  #projectTitle{
+    font-family: cursive; 
+    font-size: 30px;
+    color: orangered;
+  }

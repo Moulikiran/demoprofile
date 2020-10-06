@@ -18,7 +18,7 @@ export class AboutMeComponent implements OnInit {
 
   ngOnInit() {
     $('#abouts').mouseover(function() {
-      $(this).css('background-color', 'yellow');
+      //$(this).css('background-color', 'yellow');
     });
   }
 }

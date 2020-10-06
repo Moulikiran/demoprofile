@@ -4,10 +4,10 @@
 </div>
 <hr id="horizontalBar">
 
-<div *ngFor="let project of projects" [ngStyle]="{'margin-top': project.paddingRequired ? '325px' : '0px'}" >
+<div *ngFor="let project of projects" [ngStyle]="{'margin-top': project.paddingRequired ? '350px' : '30px'}" >
   <div class="col-sm-12">
-      <label id="companyName" style="float: left; font-family: cursive; font-size: 30px;">{{project.companyName}}</label>
-      <label id="companyYear" style="float: right; font-family: Arial, Helvetica, sans-serif ; font-size: 25px;">{{project.year}}</label>
+      <label id="companyName" style="float: left;" id="projectTitle">{{project.companyName}}</label>
+      <label id="companyYear" style="float: right;" id="projectTitle">{{project.year}}</label>
       <hr style="width: inherit; float: right;" id="horizontalLine">
   </div>
   <div style="float: left;">

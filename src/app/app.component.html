@@ -1,70 +1,68 @@
 <div class="container">
-  <div class="AboutMe">
-      <div id="title" class="col-sm-12 fade-in">
-          <h2 id="myQuote"> {{myQuote}} </h2>
-      </div>
-      <div class="row">
-          <div id="aboutMe" class="col-sm-4">
-              <h2 id="myname"> {{myname}} </h2>
-              <h4 id="expertise" style="font-size: 1.5em">{{expertised}}</h4>
-              <!-- <label>About me</label>
+    <div class="AboutMe">
+        <div id="title" class="col-sm-12 fade-in">
+            <h2 id="myQuote"> {{myQuote}} </h2>
+        </div>
+        <div class="row">
+            <div id="aboutMe" class="col-sm-4">
+                <h2 id="myname"> {{myname}} </h2>
+                <h4 id="expertise" style="font-size: 1.5em">{{expertised}}</h4>
+                <!-- <label>About me</label>
               <br>
               <p id="contentAboutMe">{{contentAboutMe}}</p> -->
-              <!-- "deploy": "ng build --prod --base-href https://moulikiran.github.io/MouliProfile/ && angular-cli-ghpages --branch gh-pages" -->
-          </div>
-          <div class="col-sm-4" style="padding-left: 30px">
-              <div class="profilePhoto">
-                  <div class="profileAdjustment">
-                      <img src="assets/MeraPhoto.jpg" alt="" width="140" height="140" />
-                  </div>
-              </div>
-          </div>
-
-          <div id="contactMe" class="col-sm-4">
-              <label id="mobileNumber">{{MobileNumber}}</label>
-              <br>
-              <label id="emailId">{{emailId}}</label>
-              <br>
-              <label>
-                  <a href={{network.url}} *ngFor="let network of networks" class="socialNetworking" target="_blank">
-                      <img src={{network.imgSrc}} class="iconReplacer">
-                  </a>
-              </label>
-          </div>
-      </div>
-      <div class="col-sm-12" style="padding: 0">
-          <div class="col-sm-6 leftdivsion"></div>
-          <div class="col-sm-6 rightDivison"></div>
-      </div>
-      <div class="col-sm-12" class="sections">
-          <div class="col-sm-6 leftSections">
-              <div class="button" id="aboutmeContent" style="margin-left: 3em">
-                  <a (click)="routeToPage('aboutme')" rel="no-refresh">About Me</a>
-              </div>
-              <div class="button" id="education" style="margin-left: 1.5em">
-                <a (click)="routeToPage('education')" rel="no-refresh">Education</a>
+                <!-- "deploy": "ng build --prod --base-href https://moulikiran.github.io/MouliProfile/ && angular-cli-ghpages --branch gh-pages" -->
             </div>
-              <div class="button" id="skills" style="margin-left: 1.5em">
-                <a (click)="routeToPage('skills')">Skills</a>
+            <div class="col-sm-4" style="padding-left: 30px">
+                <div class="profilePhoto">
+                    <div class="profileAdjustment">
+                        <img src="assets/MeraPhoto.jpg" alt="" width="140" height="140" />
+                    </div>
+                </div>
             </div>
-              
 
-          </div>
-          <div class="col-sm-6 rightSections">
-              
-              <div class="button" id="projects" style="margin-left: 3em">
-                  <a (click)="routeToPage('projects')">Projects</a>
-              </div>
-              <div class="button" id="activites" style="margin-left: 1.5em">
+            <div id="contactMe" class="col-sm-4">
+                <label id="mobileNumber">{{MobileNumber}}</label>
+                <br>
+                <label id="emailId">{{emailId}}</label>
+                <br>
+                <label>
+                    <a href={{network.url}} *ngFor="let network of networks" class="socialNetworking" target="_blank">
+                        <img src={{network.imgSrc}} class="iconReplacer">
+                    </a>
+                </label>
+            </div>
+        </div>
+        <div class="col-sm-12" style="padding: 0">
+            <div class="col-sm-6 leftdivsion"></div>
+            <div class="col-sm-6 rightDivison"></div>
+        </div>
+        <div class="col-sm-12" class="sections">
+            <div class="col-sm-6 leftSections">
+                <div class="button" id="aboutmeContent" style="margin-left: 3em">
+                    <a (click)="routeToPage('aboutme')" rel="no-refresh">About Me</a>
+                </div>
+                <div class="button" id="education" style="margin-left: 3em">
+                    <a (click)="routeToPage('education')" rel="no-refresh">Education</a>
+                </div>
+
+            </div>
+            <div class="col-sm-6 rightSections">
+                <div class="button" id="skills" style="margin-left: 3em">
+                    <a (click)="routeToPage('skills')">Skills</a>
+                </div>
+                <div class="button" id="projects" style="margin-left: 3em">
+                    <a (click)="routeToPage('projects')">Projects</a>
+                </div>
+                <!-- <div class="button" id="activites" style="margin-left: 1.5em">
                 <a (click)="routeToPage('activities')" rel="no-refresh">Activites</a>
-            </div>
-            <!-- <div class="button" id="all" style="margin-left: 1.5em">
+            </div> -->
+                <!-- <div class="button" id="all" style="margin-left: 1.5em">
                   <a (click)="routeToPage('aboutme')">All</a>
               </div> -->
-          </div>
-      </div>
-      <div style="width:100%;height: auto;">
-          <router-outlet></router-outlet>
-      </div>
-  </div>
+            </div>
+        </div>
+        <div style="width:100%;height: auto;">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
 </div>

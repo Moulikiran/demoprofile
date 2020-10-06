@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class EducationComponent implements OnInit {
 
   studiesListObject = [{
-    title: "Bachelor in technology",
+    title: "Bachelor in Technology",
     college: "Jawaharlal Nehru Technological University - Anantapur",
     specialization: "Computer Science Engineering",
     year: "2010-2014",
