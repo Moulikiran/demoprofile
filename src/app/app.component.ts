@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
       { name: 'LinkedIn', imgSrc: 'assets/linkedin.png', url: 'https://www.linkedin.com/in/mouli45/' },
       { name: 'twitter', imgSrc: 'assets/twiiter.png', url: 'https://twitter.com/MouliKiran45' }];
 
-    timer(0, 3000)
+    timer(0, 2000)
     .subscribe(() => {
       http.get<Greeting>('https://myprofilespring.herokuapp.com/greeting').subscribe(data => {
         if(data.content != "null"){
