@@ -134,3 +134,18 @@
   to {opacity: 1}
 }
 /* image slider end */
+
+#educationBox{
+  border: 1px solid black; 
+  width: 32%;
+  float: left; 
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 600px){
+  
+  #educationBox{
+    width: 100%;
+    margin-top: 10px;
+  }
+}
