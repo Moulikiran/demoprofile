@@ -45,17 +45,17 @@ export class AppComponent implements OnInit {
 
     timer(0, 2000)
     .subscribe(() => {
-      http.get<Greeting>('https://myprofilespring.herokuapp.com/greeting').subscribe(data => {
-        if(data.content != "null"){
-          if(data.content === this.oldSelected) {
-            console.log(data.content , this.oldSelected);
-          }else{
-            this.oldSelected = data.content;
-            this.router.navigate(['/'+data.content]);
-            console.log("Changing route to"+ data.content);
-          }
-        }
-      })
+      // http.get<Greeting>('https://myprofilespring.herokuapp.com/greeting').subscribe(data => {
+      //   if(data.content != "null"){
+      //     if(data.content === this.oldSelected) {
+      //       console.log(data.content , this.oldSelected);
+      //     }else{
+      //       this.oldSelected = data.content;
+      //       this.router.navigate(['/'+data.content]);
+      //       console.log("Changing route to"+ data.content);
+      //     }
+      //   }
+      // })
     });
   }
 
