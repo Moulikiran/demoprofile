@@ -183,7 +183,7 @@ a {
   height: auto;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   #backDesign {
     visibility: hidden;
     clear: both;
@@ -230,19 +230,13 @@ a {
     height: auto;
     padding-top: 15px;
   }
-}
-
-@media screen and (max-width: 200px) {
-    .row{
-      padding-top: 90px;
-    }
-    #myQuote{
-      font-size: 1.5em;
-    }
-    #myname{
-      font-size: 2em;
-    }
-    #mynammw1{
-      font-size: 2em;
-    }
+  .row{
+    padding-top: 90px;
+  }
+  #myQuote{
+    font-size: 1.5em;
+  }
+  #myname{
+    font-size: 2em;
+  }
 }
