@@ -232,7 +232,7 @@ a {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 200px) {
     .row{
       padding-top: 90px;
     }
