@@ -59,3 +59,9 @@ table {
     font-size: 30px;
     color: orangered;
   }
+
+  @media screen and (max-width: 400px){
+      #projects{
+          font-size: 2.2em;
+      }
+  }

@@ -46,10 +46,22 @@
 @media screen and (max-width: 600px) {
     #skillsCircle {
         width: 100%;
-        margin-top: 15%;
+        margin-top: 20%;
     }
     
     #skillsForComponent {
         width: 25%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #skillsCircle {
+        width: 100%;
+        margin-top: 40%;
+    }
+    
+    #skillsForComponent {
+        width: 25%;
+        padding-bottom: 25px;
     }
 }

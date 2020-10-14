@@ -231,3 +231,15 @@ a {
     padding-top: 15px;
   }
 }
+
+@media screen and (max-width: 400px) {
+    .row{
+      padding-top: 90px;
+    }
+    #myQuote{
+      font-size: 1.5em;
+    }
+    #myname{
+      font-size: 2em;
+    }
+}
