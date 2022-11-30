@@ -9,8 +9,18 @@ export class ProjectsComponent implements OnInit {
 
   projects = [
     {
-      companyName: "Genesys Telecom Labs Pvt.Ltd",
-      year:"DEC 2017 - Present",
+      companyName: "Thomson Reuters International Services LTD",
+      year:"NOV 2021 - Present",
+      product:"Checkpoint",
+      productDesc:"Checkpoint is research product for tax and accounting professionals. It includes reference sources for U.S. Federal, state, and local taxation; accounting, auditing and corporate finance",
+      role: "Full Stack Development Engineer",
+      project:"Checkpoint Edge/lassic",
+      delivered:"Resposible for handling the feature activties from Front End to Back End. Been part of arcitectural/scale meetings to scale the application.",
+      paddingRequired: true
+    },
+    {
+      companyName: "Genesys Telecom Labs Pvt.Ltd -> Infosys Ltd",
+      year:"DEC 2017 - OCT 2021",
       product:"PureConnect",
       productDesc:"PureConnect is a Call Center Software that makes customer interactions better. It suppports for mid size market.",
       project:"PureConnect - Analytics",
