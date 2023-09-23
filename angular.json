@@ -26,7 +26,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "baseHref": "https://github.com/Moulikiran/demoprofile"
           },
           "configurations": {
             "production": {
